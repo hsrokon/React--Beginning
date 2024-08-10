@@ -8,7 +8,7 @@ const Header = () => {
       {/* we can just use a fragment <></> without having anything like div that will also work */}
 
       <h1>
-        My Header
+        My Notes
       </h1>
       
     </div>
