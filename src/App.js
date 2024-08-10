@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-
+// this is the default codes
 function App() {
   return (
     <div className="App">
