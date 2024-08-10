@@ -18,13 +18,14 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" element={<NotesListPage />} />
-          <Route path="/note" element={<NotePage />} />
+          <Route path="/note/:id" element={<NotePage />} />
         </Routes>
       </div>
     </Router>
     //with this Route we specify the path and the component that should be rendered out
     // "/" means homepahe ex. 'hsrokon.com/'
     // "/note" will take me to note page
+    // "/:id" is a dynamic parameter | you can name 'id' whatever you want e.g. "/:note_id" | this param gives an id to each diffrent note on the url
   );
 }
 
