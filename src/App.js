@@ -10,6 +10,9 @@ import Header from './components/Header.js';
 import NotesListPage from './pages/NotesListPage.js';
 import NotePage from './pages/NotePage.js';
 
+//---------------can't fix/set-up the JSON server---------------
+//so the project stopped at 1:12:28 - https://www.youtube.com/live/6fM3ueN9nYM?si=Eg1IYHPYT8ikisoZ
+
 function App() {
   return (
     <Router>
