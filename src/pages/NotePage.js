@@ -1,13 +1,19 @@
 import React from 'react'
 import { useParams } from 'react-router-dom'
+import notes from '../assets/data'
 
 const NotePage = () => {
-  let id = useParams()
-  console.log("noteId:", id)
+  let {id} = useParams()
+  // id is a string, so it needs to be converted to a number by {id} and also Number(id)
+
+  let note = notes.find(note=> note.id === Number(id))
+  //imported all the notes> used id> ran a filter to find specific note> rendered that in the body
+  
   return (
     <div>
-      <h1>This is a single note page</h1>
+      <p>{note?.body}</p>
     </div>
+    //that '?' is not to through an error if id doesn't exist
   )
 }
 
