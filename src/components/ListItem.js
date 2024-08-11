@@ -8,7 +8,9 @@ const ListItem = ({note}) => {
   //we're giving link to each note with id
   return (
     <Link to={`/note/${note.id}`}>
-      <h3>{note.body}</h3>
+      <div className='notes-list-item'>
+        <h3>{note.body}</h3>
+      </div>
     </Link>
   )
 }

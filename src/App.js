@@ -13,13 +13,15 @@ import NotePage from './pages/NotePage.js';
 function App() {
   return (
     <Router>
-      <div className="App">
-        {/* In order to bring the imported component into our application  we've import it like this <../> */}
-        <Header />
-        <Routes>
-          <Route path="/" element={<NotesListPage />} />
-          <Route path="/note/:id" element={<NotePage />} />
-        </Routes>
+      <div className="container dark">
+        <div className="app">
+          {/* In order to bring the imported component into our application  we've import it like this <../> */}
+          <Header />
+          <Routes>
+            <Route path="/" element={<NotesListPage />} />
+            <Route path="/note/:id" element={<NotePage />} />
+          </Routes>
+        </div>
       </div>
     </Router>
     //with this Route we specify the path and the component that should be rendered out
